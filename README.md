@@ -2,7 +2,7 @@
 
 __
 
-Get Token
+## Get Token
 ```
 POST /api/sanctum/token HTTP/1.1
 Content-Type: application/json
