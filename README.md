@@ -67,15 +67,16 @@ Content-Type: image/png
 
 ## Route List
 
-GET|HEAD        api/event .................................................. event.index › API\EventController@index
-POST            api/event .................................................. event.store › API\EventController@store
-POST            api/event/upload/{event} ........................................... API\EventController@uploadImage
-GET|HEAD        api/event/{event} ............................................ event.show › API\EventController@show
-PUT|PATCH       api/event/{event} ........................................ event.update › API\EventController@update
-DELETE          api/event/{event} ...................................... event.destroy › API\EventController@destroy
-GET|HEAD        api/event/{event}/invite ................................................ API\InviteController@index
-POST            api/event/{event}/invite ................................................ API\InviteController@store
-DELETE          api/invite/{invite} ................................................... API\InviteController@destroy
-POST            api/sanctum/token ......................................................... API\AuthController@login
-GET|HEAD        api/user ................................................................... API\AuthController@show
-GET|HEAD        sanctum/csrf-cookie .............. sanctum.csrf-cookie › Laravel\Sanctum › CsrfCookieController@show
+| GET\|HEAD  | api/event .................................................. event.index › API\EventController@index |
+|------------|------------------------------------------------------------------------------------------------------|
+| POST       | api/event .................................................. event.store › API\EventController@store |
+| POST       | api/event/upload/{event} ........................................... API\EventController@uploadImage |
+| GET\|HEAD  | api/event/{event} ............................................ event.show › API\EventController@show |
+| PUT\|PATCH | api/event/{event} ........................................ event.update › API\EventController@update |
+| DELETE     | api/event/{event} ...................................... event.destroy › API\EventController@destroy |
+| GET\|HEAD  | api/event/{event}/invite ................................................ API\InviteController@index |
+| POST       | api/event/{event}/invite ................................................ API\InviteController@store |
+| DELETE     | api/invite/{invite} ................................................... API\InviteController@destroy |
+| POST       | api/sanctum/token ......................................................... API\AuthController@login |
+| GET\|HEAD  | api/user ................................................................... API\AuthController@show |
+| GET\|HEAD  | sanctum/csrf-cookie .............. sanctum.csrf-cookie › Laravel\Sanctum › CsrfCookieController@show |
